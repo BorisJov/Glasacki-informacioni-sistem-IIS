@@ -1,8 +1,16 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from .models import *
 
-# Register your models here.
+class VoterInline(admin.StackedInline):
+    model = Voter
+    can_delete = False
 
+class UserAdmin(BaseUserAdmin):
+    inlines = (VoterInline,)
+
+admin.site.unregister(User)
+admin.site.register(User, UserAdmin)
 admin.site.register(ElectionType)
 admin.site.register(Election)
 admin.site.register(Candidate)
