@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="text-center">{{election.title}}</h1>
+<br />
+<div class="container">
+    <div class="card bg-light text-dark text-center">
+        <div class="card-body">{{election.description}}</div>
+    </div>
+</div>
+<br />
+<div class="text-center">
+    <a class="btn btn-dark" href="{% url 'project:voting_step2' election.id %}" role="button">Click to continue</a>
+</div>
+{% endblock content %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agent</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'project:voter_homepage' %}">VIS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+            aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                {% block content %}
+                {% endblock content %}
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</body>
+
+</html>

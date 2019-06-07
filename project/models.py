@@ -7,10 +7,15 @@ class ElectionType(models.Model):
     candidate_selection_number = models.IntegerField()
     voter_equality = models.BooleanField()
 
+    def __str__(self):
+        return 'S:' + str(self.secrecy) + ' CSN:' + str(self.candidate_selection_number) + ' VE:' + str(self.voter_equality)
+
 
 class VotingUnit(models.Model):
-    parent_unit = models.ForeignKey('self', on_delete=models.CASCADE, blank=True)
+    parent_unit = models.ForeignKey(
+        'self', on_delete=models.CASCADE, blank=True, null=True)
     name = models.CharField(max_length=100)
+    voters_can_be_added = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
@@ -18,7 +23,8 @@ class VotingUnit(models.Model):
 
 class Election(models.Model):
     election_type = models.ForeignKey(ElectionType, on_delete=models.CASCADE)
-    base_unit = models.ForeignKey(VotingUnit, on_delete=models.CASCADE, blank=True, null=True)
+    base_unit = models.ForeignKey(
+        VotingUnit, on_delete=models.CASCADE, blank=True, null=True)
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=1000, blank=True)
     begin_datetime = models.DateTimeField()
@@ -30,7 +36,7 @@ class Election(models.Model):
 
 class Candidate(models.Model):
     election = models.ForeignKey(
-        Election, on_delete=models.CASCADE, blank=True)
+        Election, on_delete=models.CASCADE, blank=True, null=True)
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=1000, blank=True)
 
@@ -66,8 +72,12 @@ class Voter(models.Model):
     voting_power = models.DecimalField(
         decimal_places=2,
         max_digits=10,
-        blank=True
+        blank=True,
+        null=True
     )
+
+    def __str__(self):
+        return self.user.first_name + ' ' + self.user.last_name
 
 
 class Vote(models.Model):
@@ -82,7 +92,7 @@ class Vote(models.Model):
 class CandidateChoice(models.Model):
     vote = models.ForeignKey(Vote, on_delete=models.CASCADE)
     candidate = models.ForeignKey(Candidate, on_delete=models.CASCADE)
-    value = models.IntegerField(blank=True)
+    value = models.IntegerField(blank=True, null=True)
 
     class Meta:
-        unique_together = (('vote', 'candidate'),)
+        unique_together = (('vote', 'candidate',), ('vote', 'value'))
