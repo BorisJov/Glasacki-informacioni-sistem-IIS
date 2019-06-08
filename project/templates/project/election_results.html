@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load result_extras %}
+<h1>Results by candidate:</h1>
+{% for candidate in candidates %}
+<h3>{{candidate.name}}</h3>
+<table class="text-center table table-bordered">
+    {% for row in complete_tree %}    
+    <tr>
+        {% for unit in row %}
+        <td colspan="{{unit.get_colspan}}">{{unit.name}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+    <tr>
+        {% table_results level_units results candidate %}
+    </tr>
+</table>
+{% endfor %}
+
+{% endblock content %}

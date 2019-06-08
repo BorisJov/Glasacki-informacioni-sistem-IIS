@@ -1,8 +1,12 @@
 from datetime import date, timedelta, datetime
 from django.shortcuts import get_object_or_404, render, redirect
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from .models import *
 #import pdb; pdb.set_trace()
 
+
+@login_required()
 def voter_homepage(request):
     user = request.user
     voter = user.voter
@@ -29,24 +33,29 @@ def voter_homepage(request):
     context = {'elections': elections}
     return render(request, 'project/voter_homepage.html', context)
 
+
+@login_required()
 def voting_step1(request, election_id):
     election = get_object_or_404(Election, pk=election_id)
     context = {'election': election}
     return render(request, 'project/voting_step1.html', context)
-    
 
+
+@login_required()
 def voting_step2(request, election_id):
     election = get_object_or_404(Election, pk=election_id)
     candidates = election.candidate_set.all()
-    selection_range = list(range(1, election.election_type.candidate_selection_number + 1))
+    selection_range = list(
+        range(1, election.election_type.candidate_selection_number + 1))
     context = {
         'election': election,
         'candidates': candidates,
         'selection_range': selection_range
-        }
+    }
     return render(request, 'project/voting_step2.html', context)
 
 
+@login_required()
 def cast_vote(request, election_id):
     election = get_object_or_404(Election, pk=election_id)
     sel_num = election.election_type.candidate_selection_number
@@ -73,3 +82,116 @@ def cast_vote(request, election_id):
         else:
             dup_num = dup_num + 1
     return render(request, 'project/finished_voting.html')
+
+
+def voter_login(request):
+    if request.method == 'GET':
+        return render(request, 'project/voter_login.html')
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('project:voter_homepage')
+        else:
+            return render(request, 'project/voter_login.html')
+
+
+@login_required()
+def voter_logout(request):
+    logout(request)
+    return redirect('project:voter_login')
+
+
+@login_required()
+def admin_elections(request):
+    elections = Election.objects.all()
+    context = {'elections': elections}
+    return render(request, 'project/admin_elections.html', context)
+
+
+@login_required()
+def admin_result_config(request, election_id):
+    election = get_object_or_404(Election, pk=election_id)
+    bunit = election.base_unit
+    depth = 1
+    if bunit.votingunit_set.exists():
+        cunit = bunit
+        while cunit.votingunit_set.exists():
+            cunit = cunit.votingunit_set.first()
+            depth = depth + 1
+
+    selection_range = list(range(1, depth + 1))
+    context = {'selection_range': selection_range, 'election': election}
+    return render(request, 'project/admin_result_config.html', context)
+
+
+def get_unit_results(unit, election):
+    # prepare ret_val
+    ret_val = dict()
+    for candidate in election.candidate_set.all():
+        ret_val[candidate] = 0
+
+    # do cool recursion stuff
+    if unit.votingunit_set.exists():
+        for subunit in unit.votingunit_set.all():
+            tmp = get_unit_results(subunit, election)
+            for candidate in tmp:
+                ret_val[candidate] += tmp[candidate]
+        return ret_val
+    else:
+        unit_voters = unit.voter_set.all()
+        votes = Vote.objects.filter(election=election, voter__in=unit_voters)
+        for vote in votes:
+            choice = vote.candidatechoice_set.filter(value=1).get()
+            ret_val[choice.candidate] += vote.voter.voting_power
+        return ret_val
+
+
+def unit_level_list(unit, level):
+    ret_val = []
+    if level <= 1:
+        ret_val.append(unit)
+        return ret_val
+    else:
+        for subunit in unit.votingunit_set.all():
+            ret_val = ret_val + unit_level_list(subunit, level-1)
+        return ret_val
+
+
+def bottoms_up(unit_list):
+    ret_val = []
+    ret_val.append(unit_list)
+    curr_list = unit_list
+    while len(curr_list) > 1:
+        tmp = []
+        for unit in curr_list:
+            if unit.parent_unit not in tmp:
+                tmp.append(unit.parent_unit)
+        ret_val.append(tmp)
+        curr_list = tmp
+    return ret_val
+
+
+@login_required()
+def admin_generate_results(request):
+    election = get_object_or_404(Election, pk=request.POST.get("election_id"))
+    level = int(request.POST.get("level_select"))
+    chart_type = request.POST.get("chart_type")
+    
+    level_units = unit_level_list(election.base_unit, level)
+    results = []
+    for unit in level_units:
+        results.append(get_unit_results(unit, election))
+    complete_tree = bottoms_up(level_units)
+    complete_tree.reverse()
+
+    candidates = election.candidate_set.all()
+    context = {
+        'level_units': level_units,
+        'results': results,
+        'complete_tree': complete_tree,
+        'candidates': candidates
+    }
+    return render(request, 'project/election_results.html', context)

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Election Results</h2>
+<p>Below are the available elections:</p>
+<br />
+{% if elections %}
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Elections</th>
+            <th>Base voting unit</th>
+            <th>Start date&time</th>
+            <th>End date&time</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for election in elections %}
+        <tr>
+            <td>{{election.title}}</td>
+            <td>{{election.base_unit}}</td>
+            <td>{{election.begin_datetime}}</td>
+            <td>{{election.end_datetime}}</td>
+            <td><a class="btn btn-primary" href="{% url 'project:admin_result_config' election.id %}"
+                    role="button">Generate results</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="card bg-light text-dark">
+    <div class="card-body">There are currently no active or finished elections.</div>
+</div>
+{% endif %}
+
+{% endblock content %}

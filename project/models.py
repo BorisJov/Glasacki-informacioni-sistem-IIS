@@ -20,6 +20,15 @@ class VotingUnit(models.Model):
     def __str__(self):
         return self.name
 
+    def get_colspan(self):
+        if self.votingunit_set.exists():
+            tmp = 0
+            for subunit in self.votingunit_set.all():
+                tmp += subunit.get_colspan()
+            return tmp
+        else:
+            return 1
+
 
 class Election(models.Model):
     election_type = models.ForeignKey(ElectionType, on_delete=models.CASCADE)
@@ -42,6 +51,9 @@ class Candidate(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        unique_together = (('election', 'name'),)
 
 
 class OversightBodyPermission(models.Model):
@@ -72,6 +84,7 @@ class Voter(models.Model):
     voting_power = models.DecimalField(
         decimal_places=2,
         max_digits=10,
+        default=1,
         blank=True,
         null=True
     )

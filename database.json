@@ -1,0 +1,2459 @@
+[
+{
+    "model": "project.electiontype",
+    "pk": 1,
+    "fields": {
+        "secrecy": false,
+        "candidate_selection_number": 2,
+        "voter_equality": true
+    }
+},
+{
+    "model": "project.electiontype",
+    "pk": 2,
+    "fields": {
+        "secrecy": true,
+        "candidate_selection_number": 1,
+        "voter_equality": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 1,
+    "fields": {
+        "parent_unit": null,
+        "name": "Republika Srbija",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 2,
+    "fields": {
+        "parent_unit": 1,
+        "name": "Vojvodina",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 3,
+    "fields": {
+        "parent_unit": 1,
+        "name": "Centralna Srbija",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 4,
+    "fields": {
+        "parent_unit": 1,
+        "name": "Kosovo i Metohija",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 5,
+    "fields": {
+        "parent_unit": 2,
+        "name": "Novi Sad",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 6,
+    "fields": {
+        "parent_unit": 2,
+        "name": "Subotica",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 7,
+    "fields": {
+        "parent_unit": 3,
+        "name": "Beograd",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 8,
+    "fields": {
+        "parent_unit": 3,
+        "name": "Nis",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 9,
+    "fields": {
+        "parent_unit": 3,
+        "name": "Vranje",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 10,
+    "fields": {
+        "parent_unit": 4,
+        "name": "Prizren",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 11,
+    "fields": {
+        "parent_unit": 4,
+        "name": "Kosovska Mitrovica",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.election",
+    "pk": 3,
+    "fields": {
+        "election_type": 2,
+        "base_unit": 1,
+        "title": "Predsednicki izbori 2020",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat.",
+        "begin_datetime": "2019-06-07T06:00:00Z",
+        "end_datetime": "2019-06-18T18:00:00Z"
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 4,
+    "fields": {
+        "election": 3,
+        "name": "Kralj Tibor II",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 5,
+    "fields": {
+        "election": 3,
+        "name": "Karlo Veliki",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 6,
+    "fields": {
+        "election": 3,
+        "name": "Julije Cezar",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 4,
+    "fields": {
+        "election": 3,
+        "voter": 3,
+        "timestamp": "2019-06-08T16:26:44.373Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 5,
+    "fields": {
+        "election": 3,
+        "voter": 6,
+        "timestamp": "2019-06-08T16:27:04.253Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 6,
+    "fields": {
+        "election": 3,
+        "voter": 7,
+        "timestamp": "2019-06-08T16:27:23.109Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 7,
+    "fields": {
+        "election": 3,
+        "voter": 8,
+        "timestamp": "2019-06-08T16:27:43.359Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 8,
+    "fields": {
+        "election": 3,
+        "voter": 4,
+        "timestamp": "2019-06-08T16:28:37.756Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 9,
+    "fields": {
+        "election": 3,
+        "voter": 5,
+        "timestamp": "2019-06-08T16:29:04.166Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 10,
+    "fields": {
+        "election": 3,
+        "voter": 11,
+        "timestamp": "2019-06-08T16:29:17.077Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 11,
+    "fields": {
+        "election": 3,
+        "voter": 9,
+        "timestamp": "2019-06-08T16:29:38.972Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 12,
+    "fields": {
+        "election": 3,
+        "voter": 10,
+        "timestamp": "2019-06-08T16:29:54.204Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 13,
+    "fields": {
+        "election": 3,
+        "voter": 13,
+        "timestamp": "2019-06-08T16:30:23.620Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 14,
+    "fields": {
+        "election": 3,
+        "voter": 12,
+        "timestamp": "2019-06-08T16:30:53.589Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 15,
+    "fields": {
+        "election": 3,
+        "voter": 14,
+        "timestamp": "2019-06-08T16:31:05.950Z"
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 4,
+    "fields": {
+        "vote": 4,
+        "candidate": 4,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 5,
+    "fields": {
+        "vote": 5,
+        "candidate": 6,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 6,
+    "fields": {
+        "vote": 6,
+        "candidate": 6,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 7,
+    "fields": {
+        "vote": 7,
+        "candidate": 4,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 8,
+    "fields": {
+        "vote": 8,
+        "candidate": 5,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 9,
+    "fields": {
+        "vote": 9,
+        "candidate": 5,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 10,
+    "fields": {
+        "vote": 10,
+        "candidate": 6,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 11,
+    "fields": {
+        "vote": 11,
+        "candidate": 6,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 12,
+    "fields": {
+        "vote": 12,
+        "candidate": 4,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 13,
+    "fields": {
+        "vote": 13,
+        "candidate": 6,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 14,
+    "fields": {
+        "vote": 14,
+        "candidate": 6,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 15,
+    "fields": {
+        "vote": 15,
+        "candidate": 5,
+        "value": 1
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "project",
+        "model": "candidate"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "project",
+        "model": "candidatechoice"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "project",
+        "model": "election"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "project",
+        "model": "electiontype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "project",
+        "model": "oversightbody"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "project",
+        "model": "oversightbodypermission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "project",
+        "model": "oversightmember"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "project",
+        "model": "vote"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "project",
+        "model": "voter"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "project",
+        "model": "votingunit"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "01x32ypvru8nzh8wnl20rre7xry7kwbm",
+    "fields": {
+        "session_data": "NjBlZWEzODM1NDIwN2RjYzNiYTIxM2Q1MjAzZDgxYzc1MDAxOTRkYTp7fQ==",
+        "expire_date": "2019-06-21T17:46:53.518Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4znuv1ky0ctb8rmlwomolv1tewfbteli",
+    "fields": {
+        "session_data": "NjBlZWEzODM1NDIwN2RjYzNiYTIxM2Q1MjAzZDgxYzc1MDAxOTRkYTp7fQ==",
+        "expire_date": "2019-06-21T17:47:45.904Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9in8q3wuv042m5esd1bdzzsptb8j2qvh",
+    "fields": {
+        "session_data": "NzdlZjM3NjgzYzFhOWFlYTlhNDJjNzZjMDEyYTdjZjNkZDhjNGNmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0ZjQwM2I3OGE5MmJlZjViNzVkOTUyZWVjOGQ2NDRhMTg1MDNmY2ZlIn0=",
+        "expire_date": "2019-06-21T17:04:40.202Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mkmc71xx74gh20bbzqu3s9yobq3detzf",
+    "fields": {
+        "session_data": "NjBlZWEzODM1NDIwN2RjYzNiYTIxM2Q1MjAzZDgxYzc1MDAxOTRkYTp7fQ==",
+        "expire_date": "2019-06-21T17:49:00.866Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rol8dt7brbhiomnvc1g4hv2t9iuhehnj",
+    "fields": {
+        "session_data": "NjBlZWEzODM1NDIwN2RjYzNiYTIxM2Q1MjAzZDgxYzc1MDAxOTRkYTp7fQ==",
+        "expire_date": "2019-06-21T17:46:07.919Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rqkgvee7fu03wwjlhhsh1nih5ef6d5bx",
+    "fields": {
+        "session_data": "NzdlZjM3NjgzYzFhOWFlYTlhNDJjNzZjMDEyYTdjZjNkZDhjNGNmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0ZjQwM2I3OGE5MmJlZjViNzVkOTUyZWVjOGQ2NDRhMTg1MDNmY2ZlIn0=",
+        "expire_date": "2019-06-17T20:57:26.123Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tc6juspmuenbpby9yp2q7ej7rut2llke",
+    "fields": {
+        "session_data": "NzdlZjM3NjgzYzFhOWFlYTlhNDJjNzZjMDEyYTdjZjNkZDhjNGNmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0ZjQwM2I3OGE5MmJlZjViNzVkOTUyZWVjOGQ2NDRhMTg1MDNmY2ZlIn0=",
+        "expire_date": "2019-06-22T14:31:12.075Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "va3qz43ogsu4nuf8cbaaqw72zhj2ewld",
+    "fields": {
+        "session_data": "NjBlZWEzODM1NDIwN2RjYzNiYTIxM2Q1MjAzZDgxYzc1MDAxOTRkYTp7fQ==",
+        "expire_date": "2019-06-21T17:45:14.782Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add candidate",
+        "content_type": 1,
+        "codename": "add_candidate"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change candidate",
+        "content_type": 1,
+        "codename": "change_candidate"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete candidate",
+        "content_type": 1,
+        "codename": "delete_candidate"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view candidate",
+        "content_type": 1,
+        "codename": "view_candidate"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add candidate choice",
+        "content_type": 2,
+        "codename": "add_candidatechoice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change candidate choice",
+        "content_type": 2,
+        "codename": "change_candidatechoice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete candidate choice",
+        "content_type": 2,
+        "codename": "delete_candidatechoice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view candidate choice",
+        "content_type": 2,
+        "codename": "view_candidatechoice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add election",
+        "content_type": 3,
+        "codename": "add_election"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change election",
+        "content_type": 3,
+        "codename": "change_election"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete election",
+        "content_type": 3,
+        "codename": "delete_election"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view election",
+        "content_type": 3,
+        "codename": "view_election"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add election type",
+        "content_type": 4,
+        "codename": "add_electiontype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change election type",
+        "content_type": 4,
+        "codename": "change_electiontype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete election type",
+        "content_type": 4,
+        "codename": "delete_electiontype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view election type",
+        "content_type": 4,
+        "codename": "view_electiontype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add oversight body",
+        "content_type": 5,
+        "codename": "add_oversightbody"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change oversight body",
+        "content_type": 5,
+        "codename": "change_oversightbody"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete oversight body",
+        "content_type": 5,
+        "codename": "delete_oversightbody"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view oversight body",
+        "content_type": 5,
+        "codename": "view_oversightbody"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add oversight body permission",
+        "content_type": 6,
+        "codename": "add_oversightbodypermission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change oversight body permission",
+        "content_type": 6,
+        "codename": "change_oversightbodypermission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete oversight body permission",
+        "content_type": 6,
+        "codename": "delete_oversightbodypermission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view oversight body permission",
+        "content_type": 6,
+        "codename": "view_oversightbodypermission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add oversight member",
+        "content_type": 7,
+        "codename": "add_oversightmember"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change oversight member",
+        "content_type": 7,
+        "codename": "change_oversightmember"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete oversight member",
+        "content_type": 7,
+        "codename": "delete_oversightmember"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view oversight member",
+        "content_type": 7,
+        "codename": "view_oversightmember"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add vote",
+        "content_type": 8,
+        "codename": "add_vote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change vote",
+        "content_type": 8,
+        "codename": "change_vote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete vote",
+        "content_type": 8,
+        "codename": "delete_vote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view vote",
+        "content_type": 8,
+        "codename": "view_vote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add voter",
+        "content_type": 9,
+        "codename": "add_voter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change voter",
+        "content_type": 9,
+        "codename": "change_voter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete voter",
+        "content_type": 9,
+        "codename": "delete_voter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view voter",
+        "content_type": 9,
+        "codename": "view_voter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add voting unit",
+        "content_type": 10,
+        "codename": "add_votingunit"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change voting unit",
+        "content_type": 10,
+        "codename": "change_votingunit"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete voting unit",
+        "content_type": 10,
+        "codename": "delete_votingunit"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view voting unit",
+        "content_type": 10,
+        "codename": "view_votingunit"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 11,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 11,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 11,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 11,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 12,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 12,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 12,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 12,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 13,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 13,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 13,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 13,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 14,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 14,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 14,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 14,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 15,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 15,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 15,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 15,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 16,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 16,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 16,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 16,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$Q6fllyCxKr3W$FkG9gJ2jZWeF9OB7bJHNXZ5NRY9frd/YJUuaS/RD9bk=",
+        "last_login": "2019-06-08T14:31:11.981Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "Boris",
+        "last_name": "Jovanovic",
+        "email": "bokisjov@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-06-03T20:57:05Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$RuyYwhokRrkj$/QrbqWM+wW0cGwt6WRGbG6AXFnZC/MmUV42HH9r6jxM=",
+        "last_login": "2019-06-08T14:26:36.696Z",
+        "is_superuser": false,
+        "username": "suboticanin",
+        "first_name": "Joszef",
+        "last_name": "Bartos",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:03:37Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$CQyWCsnyDvCn$2Vs7LdSYJX87qRMw3WQdA/TTNAt5d7t8FIGkleU4dWw=",
+        "last_login": "2019-06-08T14:28:45.089Z",
+        "is_superuser": false,
+        "username": "beogradjanin1",
+        "first_name": "Silvija",
+        "last_name": "Blagic",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:04:48Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$Xk89WDgChdSi$AAMZwMRkZOcdw1QwG62mMV7rgfiA2uU2U7BtP88S8FA=",
+        "last_login": "2019-06-08T14:28:59.022Z",
+        "is_superuser": false,
+        "username": "beogradjanin2",
+        "first_name": "Darko",
+        "last_name": "Mandic",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:05:11Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$lAhJAKRxwSI2$cqDUgmVcCBfyGxmcZUEMtHK/07xrNc6cf/DstE7iD+A=",
+        "last_login": "2019-06-08T14:26:54.487Z",
+        "is_superuser": false,
+        "username": "novosadjanin1",
+        "first_name": "Jovan",
+        "last_name": "Skilic",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:11:55Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$o9QU4LaRUdgz$yCcGbneKfq/QzFnypyfOs2FzmXxA0fLiOXFtFk8uw3U=",
+        "last_login": "2019-06-08T14:27:16.877Z",
+        "is_superuser": false,
+        "username": "novosadjanin2",
+        "first_name": "Edita",
+        "last_name": "Pomorski",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:12:34Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$7Cbl70YZLhnM$OsTZlnXiB9S+JMaJBnVGJFovufcpws5ZVtuhgOnXVA8=",
+        "last_login": "2019-06-08T14:27:34.143Z",
+        "is_superuser": false,
+        "username": "novosadjanin3",
+        "first_name": "Hugo",
+        "last_name": "Mikic",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:13:30Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$8bkjsbOsmzYu$WiJ25nSDDirI/Ewn1GEkNcZLnnLN8i0CDr7z/YgI1KE=",
+        "last_login": "2019-06-08T14:29:33.537Z",
+        "is_superuser": false,
+        "username": "nislija1",
+        "first_name": "Petar",
+        "last_name": "Lekovic",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:14:33Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$DUPKOpLPiNCQ$sn+qj5Yx49XHWeTrjGgbyMZ7ZDcNVG94MVfiHuBu5g8=",
+        "last_login": "2019-06-08T14:29:49.878Z",
+        "is_superuser": false,
+        "username": "nislija2",
+        "first_name": "Mitar",
+        "last_name": "Polozin",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:15:05Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$ZpwMLBufydea$AuWzfFbXTXgH4GPDTu3iA7hlyo5evCICC1X5RaEVM7c=",
+        "last_login": "2019-06-08T14:29:10.946Z",
+        "is_superuser": false,
+        "username": "beogradjanin3",
+        "first_name": "Mladen",
+        "last_name": "Petrovic",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:15:38Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$ol4oOvQcoTFI$LJQ4mnVpl68bwauN+ATvxI3M5eI1Suym5KHq0DUCNDQ=",
+        "last_login": "2019-06-08T14:30:47.807Z",
+        "is_superuser": false,
+        "username": "prizrenjanin1",
+        "first_name": "Pero",
+        "last_name": "Kilimandzaro",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:16:31Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$xJ7ro2k3vGg3$6eVtNjzcF5V47AWLLGt96ZP42WHJYRreVOcsOrDluhs=",
+        "last_login": "2019-06-08T14:30:37.758Z",
+        "is_superuser": false,
+        "username": "mitrovcanin1",
+        "first_name": "Zan",
+        "last_name": "Molijer",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:17:15Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$RwGxvBNUQ0Xm$6R/+MNFAevXJi9Xmvvho9KwPOOq9lbqlHPvpvibDAok=",
+        "last_login": "2019-06-08T14:30:59.907Z",
+        "is_superuser": false,
+        "username": "mitrovcanin2",
+        "first_name": "Marko",
+        "last_name": "Trifunovic",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-06-08T14:18:24Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2019-06-03T20:58:45.588Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Madjar",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2019-06-06T13:45:05.580Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Republika Srbija",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2019-06-06T13:45:14.643Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Vojvodina",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2019-06-06T13:45:23.372Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Centralna Srbija",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2019-06-06T13:45:37.958Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Kosovo i Metohija",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2019-06-06T13:46:05.867Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Voter object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2019-06-06T13:47:11.759Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Madjar",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2019-06-06T13:58:25.653Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Vojvodina",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"voters_can_be_added\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2019-06-06T14:14:44.658Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "ElectionType object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2019-06-06T14:17:36.786Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "1",
+        "object_repr": "Mitar Miric",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2019-06-06T14:23:11.466Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Predsednicki izbori 2020",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2019-06-06T16:17:48.983Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "1",
+        "object_repr": "Mitar Miric",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"election\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2019-06-06T16:48:10.437Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2019-06-06T16:58:19.834Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "Krimi izbori",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2019-06-06T17:38:18.857Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2019-06-06T17:38:29.036Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "Krimi izbori",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\", \"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2019-06-06T18:17:23.116Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "1",
+        "object_repr": "Mitar Miric",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"election\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2019-06-06T18:38:06.106Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "S:False CSN:2 VE:True",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"candidate_selection_number\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2019-06-06T18:44:19.258Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "S:False CSN:1 VE:True",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"candidate_selection_number\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2019-06-06T18:45:27.700Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "2",
+        "object_repr": "Petar Petrovic",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2019-06-06T18:45:41.187Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "3",
+        "object_repr": "Milica Todorovic",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2019-06-06T18:47:03.625Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "S:False CSN:2 VE:True",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"candidate_selection_number\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2019-06-06T19:21:17.626Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Vote object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2019-06-06T19:26:22.449Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "2",
+        "object_repr": "CandidateChoice object (2)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2019-06-06T19:26:22.583Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "1",
+        "object_repr": "CandidateChoice object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2019-06-06T19:26:29.952Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Vote object (2)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2019-06-06T19:27:38.339Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2019-06-06T19:36:44.670Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Predsednicki izbori 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"begin_datetime\", \"end_datetime\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2019-06-08T14:00:36.155Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "Krimi izbori",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2019-06-08T14:00:36.255Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Predsednicki izbori 2020",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2019-06-08T14:01:03.897Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "Novi Sad",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2019-06-08T14:01:13.369Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "6",
+        "object_repr": "Subotica",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2019-06-08T14:01:28.817Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "Beograd",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2019-06-08T14:01:43.433Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "Nis",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2019-06-08T14:01:51.537Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "Vranje",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2019-06-08T14:02:07.331Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "10",
+        "object_repr": "Prizren",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2019-06-08T14:02:19.674Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "11",
+        "object_repr": "Kosovska Mitrovica",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2019-06-08T14:02:24.912Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "Vranje",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"voters_can_be_added\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2019-06-08T14:02:29.457Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "Nis",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"voters_can_be_added\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2019-06-08T14:02:37.202Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Vojvodina",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"voters_can_be_added\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2019-06-08T14:03:37.622Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "suboticanin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2019-06-08T14:03:48.596Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "suboticanin",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2019-06-08T14:04:02.586Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Madjar",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2019-06-08T14:04:17.214Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "suboticanin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2019-06-08T14:04:48.370Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "beogradjanin1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2019-06-08T14:04:52.318Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "beogradjanin1",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2019-06-08T14:05:11.999Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "beogradjanin2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2019-06-08T14:05:17.788Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "beogradjanin2",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2019-06-08T14:11:04.096Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "beogradjanin1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2019-06-08T14:11:21.032Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "beogradjanin2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2019-06-08T14:11:55.879Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "novosadjananin1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2019-06-08T14:12:08.592Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "novosadjananin1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2019-06-08T14:12:34.979Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "novosadjanin2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2019-06-08T14:12:50.016Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "novosadjanin2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2019-06-08T14:13:30.381Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "novosadjanin3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2019-06-08T14:13:43.295Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "novosadjanin3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2019-06-08T14:13:51.191Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "novosadjanin1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2019-06-08T14:14:33.597Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "9",
+        "object_repr": "nislija1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2019-06-08T14:14:52.752Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "9",
+        "object_repr": "nislija1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2019-06-08T14:15:06.126Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "10",
+        "object_repr": "nislija2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2019-06-08T14:15:18.120Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "10",
+        "object_repr": "nislija2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2019-06-08T14:15:38.638Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "11",
+        "object_repr": "beogradjanin3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2019-06-08T14:15:50.338Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "11",
+        "object_repr": "beogradjanin3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2019-06-08T14:16:31.810Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "12",
+        "object_repr": "prizrenjanin1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2019-06-08T14:16:49.938Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "12",
+        "object_repr": "prizrenjanin1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2019-06-08T14:17:15.255Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "13",
+        "object_repr": "mitrovcanin1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2019-06-08T14:17:26.529Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "13",
+        "object_repr": "mitrovcanin1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2019-06-08T14:18:24.683Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "14",
+        "object_repr": "mitrovcanin2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"voter\", \"object\": \" \"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2019-06-08T14:18:43.401Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "14",
+        "object_repr": "mitrovcanin2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2019-06-08T14:20:50.729Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Boris Jovanovic",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2019-06-08T14:21:14.286Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "S:True CSN:1 VE:True",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2019-06-08T14:22:11.236Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "3",
+        "object_repr": "Predsednicki izbori 2020",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2019-06-08T14:23:30.966Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "4",
+        "object_repr": "Kralj Tibor II",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2019-06-08T14:23:54.145Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "5",
+        "object_repr": "Karlo Veliki",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2019-06-08T14:24:03.765Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "6",
+        "object_repr": "Julije Cezar",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "unit": 6,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 4,
+    "fields": {
+        "user": 4,
+        "unit": 7,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 5,
+    "fields": {
+        "user": 5,
+        "unit": 7,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 6,
+    "fields": {
+        "user": 6,
+        "unit": 5,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 7,
+    "fields": {
+        "user": 7,
+        "unit": 5,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 8,
+    "fields": {
+        "user": 8,
+        "unit": 5,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 9,
+    "fields": {
+        "user": 9,
+        "unit": 8,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 10,
+    "fields": {
+        "user": 10,
+        "unit": 8,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 11,
+    "fields": {
+        "user": 11,
+        "unit": 7,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 12,
+    "fields": {
+        "user": 12,
+        "unit": 10,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 13,
+    "fields": {
+        "user": 13,
+        "unit": 11,
+        "voting_power": "1.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 14,
+    "fields": {
+        "user": 14,
+        "unit": 11,
+        "voting_power": "1.00"
+    }
+}
+]

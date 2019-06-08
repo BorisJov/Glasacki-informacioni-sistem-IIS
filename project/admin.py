@@ -45,6 +45,9 @@ class VoteAdmin(admin.ModelAdmin):
 class CandidateChoiceAdmin(admin.ModelAdmin):
     list_display = ('candidate', 'value')
 
+
+admin.site.site_url = "/project/admin_elections"
+
 admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
 admin.site.register(ElectionType, ElectionTypeAdmin)

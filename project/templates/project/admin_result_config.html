@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <h2>Result generation</h2>
+            <p>Please fill out the settings below:</p>
+            <div class="container-fluid">
+                <form action="{% url 'project:admin_generate_results' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" value="{{election.id}}" name="election_id" id="election_id" />
+                    <div class="form-group">
+                        <label for="level_select">Select unit level:</label>
+                        <select class="form-control" id="level_select" name="level_select">
+                            {% for i in selection_range %}
+                            <option value="{{i}}">Level {{i}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="chart_type">Select chart type:</label>
+                        <select class="form-control" id="chart_type" name="chart_type">
+                            <option value="pie">Pie chart</option>
+                            <option value="block">Bar chart</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark btn-lg">Generate results</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock content %}

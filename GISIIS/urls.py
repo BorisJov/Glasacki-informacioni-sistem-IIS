@@ -20,5 +20,5 @@ from project import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('project/', include('project.urls', namespace='project')),
-    path('', views.voter_homepage)
+    path('', views.voter_login)
 ]
