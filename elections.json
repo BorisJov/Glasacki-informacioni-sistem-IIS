@@ -1,0 +1,38 @@
+[
+{
+    "model": "project.election",
+    "pk": 7,
+    "fields": {
+        "election_type": 6,
+        "base_unit": 24,
+        "title": "Predsednicki izbori 2020",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat.",
+        "begin_datetime": "2019-06-08T06:00:00Z",
+        "end_datetime": "2019-06-12T18:00:00Z"
+    }
+},
+{
+    "model": "project.election",
+    "pk": 8,
+    "fields": {
+        "election_type": 7,
+        "base_unit": 24,
+        "title": "Alternativni predsednicki izbori 2020",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat.",
+        "begin_datetime": "2019-06-08T06:00:00Z",
+        "end_datetime": "2019-06-12T18:00:00Z"
+    }
+},
+{
+    "model": "project.election",
+    "pk": 9,
+    "fields": {
+        "election_type": 8,
+        "base_unit": 25,
+        "title": "Glasanje o odluci 21:0441:22 - Krompir ili ne?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat.",
+        "begin_datetime": "2019-06-08T06:00:00Z",
+        "end_datetime": "2019-06-12T18:00:00Z"
+    }
+}
+]

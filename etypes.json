@@ -1,0 +1,29 @@
+[
+{
+    "model": "project.electiontype",
+    "pk": 6,
+    "fields": {
+        "secrecy": true,
+        "candidate_selection_number": 1,
+        "voter_equality": true
+    }
+},
+{
+    "model": "project.electiontype",
+    "pk": 7,
+    "fields": {
+        "secrecy": true,
+        "candidate_selection_number": 3,
+        "voter_equality": true
+    }
+},
+{
+    "model": "project.electiontype",
+    "pk": 8,
+    "fields": {
+        "secrecy": false,
+        "candidate_selection_number": 1,
+        "voter_equality": false
+    }
+}
+]

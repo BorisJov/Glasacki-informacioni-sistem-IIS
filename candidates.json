@@ -1,0 +1,83 @@
+[
+{
+    "model": "project.candidate",
+    "pk": 16,
+    "fields": {
+        "election": 7,
+        "name": "Kralj Tibor II",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 17,
+    "fields": {
+        "election": 7,
+        "name": "Julije Cezar",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 18,
+    "fields": {
+        "election": 7,
+        "name": "Karlo Veliki",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 19,
+    "fields": {
+        "election": 8,
+        "name": "Kralj Tibor II",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 20,
+    "fields": {
+        "election": 8,
+        "name": "Julije Cezar",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 21,
+    "fields": {
+        "election": 8,
+        "name": "Karlo Veliki",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero lobortis, pulvinar diam at, convallis purus. Nulla facilisi. Sed a elementum odio, iaculis feugiat justo. Pellentesque imperdiet cursus magna, vel lobortis ante facilisis tristique. Vestibulum ac lacus et nisi gravida pulvinar. Nullam maximus fermentum convallis. Maecenas aliquam faucibus turpis, vel posuere ipsum luctus ut. Nullam eu rutrum lectus, interdum tincidunt erat. Nullam eu elit nec augue posuere vestibulum. Ut id purus turpis. Aliquam lacinia metus nec libero tristique facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer egestas purus a luctus placerat."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 22,
+    "fields": {
+        "election": 8,
+        "name": "Mitar Miric",
+        "description": "Stranka Mitra Mirica."
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 23,
+    "fields": {
+        "election": 9,
+        "name": "Da",
+        "description": "Uvoziti krompir je apsolutni imperativ!"
+    }
+},
+{
+    "model": "project.candidate",
+    "pk": 24,
+    "fields": {
+        "election": 9,
+        "name": "Ne",
+        "description": "Nikako, krompir nije zdrav. Ljudi ga nece kupovati!"
+    }
+}
+]

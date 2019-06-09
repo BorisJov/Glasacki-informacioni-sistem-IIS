@@ -3,6 +3,7 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from .models import *
+
 #import pdb; pdb.set_trace()
 
 
@@ -114,17 +115,20 @@ def admin_elections(request):
 @login_required()
 def admin_result_config(request, election_id):
     election = get_object_or_404(Election, pk=election_id)
-    bunit = election.base_unit
-    depth = 1
-    if bunit.votingunit_set.exists():
-        cunit = bunit
-        while cunit.votingunit_set.exists():
-            cunit = cunit.votingunit_set.first()
-            depth = depth + 1
+    if election.election_type.candidate_selection_number == 1:
+        bunit = election.base_unit
+        depth = 1
+        if bunit.votingunit_set.exists():
+            cunit = bunit
+            while cunit.votingunit_set.exists():
+                cunit = cunit.votingunit_set.first()
+                depth = depth + 1
 
-    selection_range = list(range(1, depth + 1))
-    context = {'selection_range': selection_range, 'election': election}
-    return render(request, 'project/admin_result_config.html', context)
+        selection_range = list(range(1, depth + 1))
+        context = {'selection_range': selection_range, 'election': election}
+        return render(request, 'project/admin_result_config.html', context)
+    else:
+        pass
 
 
 def get_unit_results(unit, election):
@@ -192,6 +196,8 @@ def admin_generate_results(request):
         'level_units': level_units,
         'results': results,
         'complete_tree': complete_tree,
-        'candidates': candidates
+        'candidates': candidates,
+        'election': election,
+        'chart_type': chart_type
     }
     return render(request, 'project/election_results.html', context)

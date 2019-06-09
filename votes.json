@@ -1,0 +1,326 @@
+[
+{
+    "model": "project.vote",
+    "pk": 50,
+    "fields": {
+        "election": 7,
+        "voter": 32,
+        "timestamp": "2019-06-09T19:58:01.173Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 51,
+    "fields": {
+        "election": 8,
+        "voter": 32,
+        "timestamp": "2019-06-09T19:58:10.837Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 52,
+    "fields": {
+        "election": 7,
+        "voter": 33,
+        "timestamp": "2019-06-09T19:58:45.437Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 53,
+    "fields": {
+        "election": 8,
+        "voter": 33,
+        "timestamp": "2019-06-09T19:58:59.878Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 54,
+    "fields": {
+        "election": 7,
+        "voter": 34,
+        "timestamp": "2019-06-09T19:59:15.668Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 55,
+    "fields": {
+        "election": 8,
+        "voter": 34,
+        "timestamp": "2019-06-09T19:59:27.918Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 56,
+    "fields": {
+        "election": 7,
+        "voter": 35,
+        "timestamp": "2019-06-09T20:00:59.414Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 57,
+    "fields": {
+        "election": 8,
+        "voter": 35,
+        "timestamp": "2019-06-09T20:01:12.320Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 58,
+    "fields": {
+        "election": 7,
+        "voter": 36,
+        "timestamp": "2019-06-09T20:01:25.717Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 59,
+    "fields": {
+        "election": 8,
+        "voter": 36,
+        "timestamp": "2019-06-09T20:01:35.287Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 60,
+    "fields": {
+        "election": 7,
+        "voter": 37,
+        "timestamp": "2019-06-09T20:02:03.907Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 61,
+    "fields": {
+        "election": 8,
+        "voter": 37,
+        "timestamp": "2019-06-09T20:02:16.922Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 62,
+    "fields": {
+        "election": 7,
+        "voter": 38,
+        "timestamp": "2019-06-09T20:02:29.675Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 63,
+    "fields": {
+        "election": 8,
+        "voter": 38,
+        "timestamp": "2019-06-09T20:02:40.925Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 64,
+    "fields": {
+        "election": 7,
+        "voter": 39,
+        "timestamp": "2019-06-09T20:02:59.273Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 65,
+    "fields": {
+        "election": 8,
+        "voter": 39,
+        "timestamp": "2019-06-09T20:03:10.361Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 66,
+    "fields": {
+        "election": 7,
+        "voter": 40,
+        "timestamp": "2019-06-09T20:03:32.422Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 67,
+    "fields": {
+        "election": 8,
+        "voter": 40,
+        "timestamp": "2019-06-09T20:03:47.175Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 68,
+    "fields": {
+        "election": 7,
+        "voter": 41,
+        "timestamp": "2019-06-09T20:04:01.352Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 69,
+    "fields": {
+        "election": 8,
+        "voter": 41,
+        "timestamp": "2019-06-09T20:04:14.663Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 70,
+    "fields": {
+        "election": 7,
+        "voter": 42,
+        "timestamp": "2019-06-09T20:04:30.623Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 71,
+    "fields": {
+        "election": 8,
+        "voter": 42,
+        "timestamp": "2019-06-09T20:04:43.616Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 72,
+    "fields": {
+        "election": 7,
+        "voter": 43,
+        "timestamp": "2019-06-09T20:04:58.211Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 73,
+    "fields": {
+        "election": 8,
+        "voter": 43,
+        "timestamp": "2019-06-09T20:05:07.839Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 74,
+    "fields": {
+        "election": 7,
+        "voter": 44,
+        "timestamp": "2019-06-09T20:05:23.617Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 75,
+    "fields": {
+        "election": 8,
+        "voter": 44,
+        "timestamp": "2019-06-09T20:05:34.522Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 76,
+    "fields": {
+        "election": 7,
+        "voter": 45,
+        "timestamp": "2019-06-09T20:05:49.596Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 77,
+    "fields": {
+        "election": 8,
+        "voter": 45,
+        "timestamp": "2019-06-09T20:06:07.960Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 78,
+    "fields": {
+        "election": 7,
+        "voter": 46,
+        "timestamp": "2019-06-09T20:06:24.927Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 79,
+    "fields": {
+        "election": 8,
+        "voter": 46,
+        "timestamp": "2019-06-09T20:06:35.959Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 80,
+    "fields": {
+        "election": 7,
+        "voter": 47,
+        "timestamp": "2019-06-09T20:06:57.127Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 81,
+    "fields": {
+        "election": 8,
+        "voter": 47,
+        "timestamp": "2019-06-09T20:07:11.330Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 82,
+    "fields": {
+        "election": 7,
+        "voter": 48,
+        "timestamp": "2019-06-09T20:07:41.084Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 83,
+    "fields": {
+        "election": 8,
+        "voter": 48,
+        "timestamp": "2019-06-09T20:07:53.679Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 84,
+    "fields": {
+        "election": 7,
+        "voter": 49,
+        "timestamp": "2019-06-09T20:08:06.682Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 85,
+    "fields": {
+        "election": 8,
+        "voter": 49,
+        "timestamp": "2019-06-09T20:08:21.192Z"
+    }
+}
+]

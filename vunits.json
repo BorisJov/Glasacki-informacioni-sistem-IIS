@@ -1,0 +1,110 @@
+[
+{
+    "model": "project.votingunit",
+    "pk": 24,
+    "fields": {
+        "parent_unit": null,
+        "name": "Republika Srbija",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 25,
+    "fields": {
+        "parent_unit": null,
+        "name": "Izvrsni odbor kompanije KvrcImport",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 26,
+    "fields": {
+        "parent_unit": 24,
+        "name": "Vojvodina",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 27,
+    "fields": {
+        "parent_unit": 24,
+        "name": "Centralna Srbija",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 28,
+    "fields": {
+        "parent_unit": 24,
+        "name": "Kosovo i Metohija",
+        "voters_can_be_added": false
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 29,
+    "fields": {
+        "parent_unit": 26,
+        "name": "Novi Sad",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 30,
+    "fields": {
+        "parent_unit": 26,
+        "name": "Subotica",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 31,
+    "fields": {
+        "parent_unit": 27,
+        "name": "Beograd",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 32,
+    "fields": {
+        "parent_unit": 27,
+        "name": "Nis",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 33,
+    "fields": {
+        "parent_unit": 27,
+        "name": "Kragujevac",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 34,
+    "fields": {
+        "parent_unit": 28,
+        "name": "Pristina",
+        "voters_can_be_added": true
+    }
+},
+{
+    "model": "project.votingunit",
+    "pk": 35,
+    "fields": {
+        "parent_unit": 28,
+        "name": "Kosovska Mitrovica",
+        "voters_can_be_added": true
+    }
+}
+]

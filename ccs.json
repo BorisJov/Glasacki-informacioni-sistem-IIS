@@ -1,0 +1,650 @@
+[
+{
+    "model": "project.candidatechoice",
+    "pk": 84,
+    "fields": {
+        "vote": 50,
+        "candidate": 16,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 85,
+    "fields": {
+        "vote": 51,
+        "candidate": 19,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 86,
+    "fields": {
+        "vote": 51,
+        "candidate": 22,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 87,
+    "fields": {
+        "vote": 51,
+        "candidate": 20,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 88,
+    "fields": {
+        "vote": 52,
+        "candidate": 18,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 89,
+    "fields": {
+        "vote": 53,
+        "candidate": 21,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 90,
+    "fields": {
+        "vote": 53,
+        "candidate": 20,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 91,
+    "fields": {
+        "vote": 53,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 92,
+    "fields": {
+        "vote": 54,
+        "candidate": 17,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 93,
+    "fields": {
+        "vote": 55,
+        "candidate": 22,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 94,
+    "fields": {
+        "vote": 55,
+        "candidate": 20,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 95,
+    "fields": {
+        "vote": 55,
+        "candidate": 21,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 96,
+    "fields": {
+        "vote": 56,
+        "candidate": 17,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 97,
+    "fields": {
+        "vote": 57,
+        "candidate": 20,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 98,
+    "fields": {
+        "vote": 57,
+        "candidate": 21,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 99,
+    "fields": {
+        "vote": 57,
+        "candidate": 19,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 100,
+    "fields": {
+        "vote": 58,
+        "candidate": 16,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 101,
+    "fields": {
+        "vote": 59,
+        "candidate": 22,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 102,
+    "fields": {
+        "vote": 59,
+        "candidate": 19,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 103,
+    "fields": {
+        "vote": 59,
+        "candidate": 20,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 104,
+    "fields": {
+        "vote": 60,
+        "candidate": 18,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 105,
+    "fields": {
+        "vote": 61,
+        "candidate": 21,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 106,
+    "fields": {
+        "vote": 61,
+        "candidate": 22,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 107,
+    "fields": {
+        "vote": 61,
+        "candidate": 20,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 108,
+    "fields": {
+        "vote": 62,
+        "candidate": 18,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 109,
+    "fields": {
+        "vote": 63,
+        "candidate": 22,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 110,
+    "fields": {
+        "vote": 63,
+        "candidate": 21,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 111,
+    "fields": {
+        "vote": 63,
+        "candidate": 20,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 112,
+    "fields": {
+        "vote": 64,
+        "candidate": 17,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 113,
+    "fields": {
+        "vote": 65,
+        "candidate": 19,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 114,
+    "fields": {
+        "vote": 65,
+        "candidate": 20,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 115,
+    "fields": {
+        "vote": 65,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 116,
+    "fields": {
+        "vote": 66,
+        "candidate": 17,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 117,
+    "fields": {
+        "vote": 67,
+        "candidate": 21,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 118,
+    "fields": {
+        "vote": 67,
+        "candidate": 20,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 119,
+    "fields": {
+        "vote": 67,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 120,
+    "fields": {
+        "vote": 68,
+        "candidate": 16,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 121,
+    "fields": {
+        "vote": 69,
+        "candidate": 20,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 122,
+    "fields": {
+        "vote": 69,
+        "candidate": 19,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 123,
+    "fields": {
+        "vote": 69,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 124,
+    "fields": {
+        "vote": 70,
+        "candidate": 16,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 125,
+    "fields": {
+        "vote": 71,
+        "candidate": 19,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 126,
+    "fields": {
+        "vote": 71,
+        "candidate": 22,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 127,
+    "fields": {
+        "vote": 71,
+        "candidate": 21,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 128,
+    "fields": {
+        "vote": 72,
+        "candidate": 18,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 129,
+    "fields": {
+        "vote": 73,
+        "candidate": 21,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 130,
+    "fields": {
+        "vote": 73,
+        "candidate": 20,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 131,
+    "fields": {
+        "vote": 73,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 132,
+    "fields": {
+        "vote": 74,
+        "candidate": 17,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 133,
+    "fields": {
+        "vote": 75,
+        "candidate": 20,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 134,
+    "fields": {
+        "vote": 75,
+        "candidate": 21,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 135,
+    "fields": {
+        "vote": 75,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 136,
+    "fields": {
+        "vote": 76,
+        "candidate": 16,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 137,
+    "fields": {
+        "vote": 77,
+        "candidate": 22,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 138,
+    "fields": {
+        "vote": 77,
+        "candidate": 20,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 139,
+    "fields": {
+        "vote": 77,
+        "candidate": 21,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 140,
+    "fields": {
+        "vote": 78,
+        "candidate": 18,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 141,
+    "fields": {
+        "vote": 79,
+        "candidate": 19,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 142,
+    "fields": {
+        "vote": 79,
+        "candidate": 20,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 143,
+    "fields": {
+        "vote": 79,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 144,
+    "fields": {
+        "vote": 80,
+        "candidate": 16,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 145,
+    "fields": {
+        "vote": 81,
+        "candidate": 20,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 146,
+    "fields": {
+        "vote": 81,
+        "candidate": 19,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 147,
+    "fields": {
+        "vote": 81,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 148,
+    "fields": {
+        "vote": 82,
+        "candidate": 17,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 149,
+    "fields": {
+        "vote": 83,
+        "candidate": 20,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 150,
+    "fields": {
+        "vote": 83,
+        "candidate": 21,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 151,
+    "fields": {
+        "vote": 83,
+        "candidate": 22,
+        "value": 3
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 152,
+    "fields": {
+        "vote": 84,
+        "candidate": 16,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 153,
+    "fields": {
+        "vote": 85,
+        "candidate": 22,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 154,
+    "fields": {
+        "vote": 85,
+        "candidate": 19,
+        "value": 2
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 155,
+    "fields": {
+        "vote": 85,
+        "candidate": 20,
+        "value": 3
+    }
+}
+]
