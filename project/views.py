@@ -128,7 +128,41 @@ def admin_result_config(request, election_id):
         context = {'selection_range': selection_range, 'election': election}
         return render(request, 'project/admin_result_config.html', context)
     else:
-        pass
+        votes = Vote.objects.filter(election=election).all()
+        choice_number = election.election_type.candidate_selection_number
+        have_majority = False
+        results = dict()
+        result_history = []
+
+        vote_count = 0
+        for vote in votes:
+            vote_count += vote.voter.voting_power
+        for candidate in election.candidate_set.all():
+            results[candidate] = 0
+        while not have_majority:
+            for candidate in results.keys():
+                results[candidate] = 0
+            for vote in votes:
+                for val in range(1, choice_number + 1):
+                    choice = vote.candidatechoice_set.filter(value=val).get()
+                    if choice.candidate in results.keys():
+                        results[choice.candidate] += 1
+                        break
+            result_history.append(results.copy())
+            if max(results.values()) > 0.5 * float(vote_count):
+                have_majority = True
+            else:
+                min_candidate = min(results, key=results.get)
+                results.pop(min_candidate)
+        
+        context = {
+            'result_history': result_history,
+            'election': election
+        }
+        return render(request, 'project/alternative_results.html', context)
+                
+            
+
 
 
 def get_unit_results(unit, election):

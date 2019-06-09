@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load result_extras %}
+<h1 class="display-3 text-center">{{election.title}}</h1>
+<h2>Results by round:</h2>
+{% for result in result_history %}
+<h4>Round {{forloop.counter}}</h4>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col" id="chart_{{forloop.counter}}">
+        </div>
+    </div>
+</div>
+{% endfor %}
+<script>
+        {% for result in result_history %}
+        Highcharts.chart('chart_{{forloop.counter}}', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: '{{election.title}}'
+            },
+            subtitle: {
+                text: 'Round {{forloop.counter}}'
+            },
+            xAxis: {
+                categories: [
+                    '{{forloop.counter}}. Round'
+                ],
+            crosshair: true
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Broj glasova'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [
+                {% for candidate, votes in result.items %}
+                {
+                    name: '{{candidate.name}}',
+                    data: [{{votes}}]
+                },
+                {% endfor %}
+            ]
+        });
+        {% endfor %}
+    </script>
+
+{% endblock content %}

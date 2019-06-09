@@ -322,5 +322,50 @@
         "voter": 49,
         "timestamp": "2019-06-09T20:08:21.192Z"
     }
+},
+{
+    "model": "project.vote",
+    "pk": 86,
+    "fields": {
+        "election": 9,
+        "voter": 50,
+        "timestamp": "2019-06-09T21:49:24.666Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 87,
+    "fields": {
+        "election": 9,
+        "voter": 51,
+        "timestamp": "2019-06-09T21:49:48.930Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 88,
+    "fields": {
+        "election": 9,
+        "voter": 52,
+        "timestamp": "2019-06-09T21:50:03.307Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 89,
+    "fields": {
+        "election": 9,
+        "voter": 53,
+        "timestamp": "2019-06-09T21:50:13.332Z"
+    }
+},
+{
+    "model": "project.vote",
+    "pk": 90,
+    "fields": {
+        "election": 9,
+        "voter": 54,
+        "timestamp": "2019-06-09T21:50:36.993Z"
+    }
 }
 ]

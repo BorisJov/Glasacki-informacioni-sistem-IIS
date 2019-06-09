@@ -160,5 +160,50 @@
         "unit": 35,
         "voting_power": "1.00"
     }
+},
+{
+    "model": "project.voter",
+    "pk": 50,
+    "fields": {
+        "user": 52,
+        "unit": 25,
+        "voting_power": "12.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 51,
+    "fields": {
+        "user": 53,
+        "unit": 25,
+        "voting_power": "10.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 52,
+    "fields": {
+        "user": 54,
+        "unit": 25,
+        "voting_power": "7.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 53,
+    "fields": {
+        "user": 55,
+        "unit": 25,
+        "voting_power": "6.00"
+    }
+},
+{
+    "model": "project.voter",
+    "pk": 54,
+    "fields": {
+        "user": 56,
+        "unit": 25,
+        "voting_power": "1.00"
+    }
 }
 ]

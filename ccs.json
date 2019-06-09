@@ -646,5 +646,50 @@
         "candidate": 20,
         "value": 3
     }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 156,
+    "fields": {
+        "vote": 86,
+        "candidate": 23,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 157,
+    "fields": {
+        "vote": 87,
+        "candidate": 23,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 158,
+    "fields": {
+        "vote": 88,
+        "candidate": 24,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 159,
+    "fields": {
+        "vote": 89,
+        "candidate": 24,
+        "value": 1
+    }
+},
+{
+    "model": "project.candidatechoice",
+    "pk": 160,
+    "fields": {
+        "vote": 90,
+        "candidate": 24,
+        "value": 1
+    }
 }
 ]
